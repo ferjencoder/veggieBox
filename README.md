@@ -1,6 +1,6 @@
 ## PreEntrega2ferJen - VeggieBox
 
-<div align="center" style="backgroud:white">
+<div align="left" style="backgroud:white">
 
 [![WebPage][1.2]][1]
 
