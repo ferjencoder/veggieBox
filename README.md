@@ -1,13 +1,4 @@
-## PreEntrega2ferJen - VeggieBox
-
-<div align="left" style="backgroud:white">
-
-[![WebPage][1.2]][1]
-
-[1.2]: https://res.cloudinary.com/ferjen/image/upload/v1670441451/veggieBox/img/navbar/vb-logo-navbar_v3cux6.svg
-[1]: https://github.com/ferjencoder/veggieBox.git
-
-</div>
+<h1>PreEntrega2ferJen - VeggieBox</h1>
 
 ---
 
