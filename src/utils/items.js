@@ -11,6 +11,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/quesadilla_porotos_negros_pimientos_ha3wdz.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669977974/veggieBox/img/dishes/525x350/quesadilla_porotos_negros_pimientos_qnobgf.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669980669/veggieBox/img/dishes/750x500/quesadilla_porotos_negros_pimientos_wu3ocv.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840882/veggieBox/img/dishes/310x207/quesadilla_porotos_negros_pimientos_rcigkz.jpg',
 		],
 		categoryId: 1,
 		category: {
@@ -43,6 +44,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/salteado_cerdo_pimientos_dulces_repollo_eqvx2n.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669980737/veggieBox/img/dishes/525x350/salteado_cerdo_pimientos_dulces_repollo_qr8mb9.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669980669/veggieBox/img/dishes/750x500/salteado_cerdo_pimientos_dulces_repollo_adukpy.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840926/veggieBox/img/dishes/310x207/salteado_cerdo_pimientos_dulces_repollo_jmmmb8.jpg',
 		],
 		categoryId: 2,
 		category: {
@@ -75,6 +77,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/bifes_balsamicos_papas_al_horno_up641y.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669982923/veggieBox/img/dishes/525x350/bifes_balsamicos_papas_al_horno_qbprex.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669982965/veggieBox/img/dishes/750x500/bifes_balsamicos_papas_al_horno_vwr7uv.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840724/veggieBox/img/dishes/310x207/bifes_balsamicos_papas_al_horno_ryrcbq.jpg',
 		],
 		categoryId: 2,
 		category: {
@@ -107,6 +110,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/bunuelos_de_garbanzos_al_curry_e2sgwj.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669985232/veggieBox/img/dishes/525x350/bunuelos_de_garbanzos_al_curry_ub9e5c.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669985276/veggieBox/img/dishes/750x500/bunuelos_de_garbanzos_al_curry_slpw0c.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840758/veggieBox/img/dishes/310x207/bunuelos_de_garbanzos_al_curry_fknzhd.jpg',
 		],
 		categoryId: 4,
 		category: {
@@ -139,6 +143,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187572/veggieBox/img/dishes/100x90/tagliatelle_cremoso_de_camarones_qeivft.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669989479/veggieBox/img/dishes/525x350/tagliatelle_cremoso_de_camarones_tvsh94.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669989468/veggieBox/img/dishes/750x500/tagliatelle_cremoso_de_camarones_mirxsy.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840978/veggieBox/img/dishes/310x207/tagliatelle_cremoso_de_camarones_gtyuuj.jpg',
 		],
 
 		categoryId: 2,
@@ -172,6 +177,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187572/veggieBox/img/dishes/100x90/wraps_veganos_de_lechuga_y_garbanzos_al_curry_b37bqp.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669991019/veggieBox/img/dishes/525x350/wraps_veganos_de_lechuga_y_garbanzos_al_curry_jbjrvg.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670004433/veggieBox/img/dishes/750x500/wraps_veganos_de_lechuga_y_garbanzos_al_curry_migynd.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670841093/veggieBox/img/dishes/310x207/wraps_veganos_de_lechuga_y_garbanzos_al_curry_tfbxb5.jpg',
 		],
 		categoryId: 5,
 		category: {
@@ -204,6 +210,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/chili_de_carne_y_porotos_negros_a_la_olla_uoww6p.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669991877/veggieBox/img/dishes/525x350/chili_de_carne_y_porotos_negros_a_la_olla_l237hg.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669991855/veggieBox/img/dishes/750x500/chili_de_carne_y_porotos_negros_a_la_olla_wp0p3a.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840778/veggieBox/img/dishes/310x207/chili_de_carne_y_porotos_negros_a_la_olla_tyg3bt.jpg',
 		],
 		categoryId: 1,
 		category: {
@@ -236,6 +243,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187572/veggieBox/img/dishes/100x90/tostadas_de_carne_con_queso_wqz1t5.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669996803/veggieBox/img/dishes/525x350/tostadas_de_carne_con_queso_zoz2l9.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669996824/veggieBox/img/dishes/750x500/tostadas_de_carne_con_queso_zkxuig.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670841052/veggieBox/img/dishes/310x207/tostadas_de_carne_con_queso_hqn9et.jpg',
 		],
 		categoryId: 1,
 		category: {
@@ -268,6 +276,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187572/veggieBox/img/dishes/100x90/tiras_de_pollo_teriyaki_ssquwk.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669997361/veggieBox/img/dishes/525x350/tiras_de_pollo_teriyaki_cgtuty.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669997380/veggieBox/img/dishes/750x500/tiras_de_pollo_teriyaki_queq9z.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670841036/veggieBox/img/dishes/310x207/tiras_de_pollo_teriyaki_wfexds.jpg',
 		],
 		categoryId: 1,
 		category: {
@@ -300,6 +309,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/curry_vegano_de_coco_y_garbanzos_xqpp4w.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669998552/veggieBox/img/dishes/525x350/curry_vegano_de_coco_y_garbanzos_zlqzrc.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669998485/veggieBox/img/dishes/750x500/curry_vegano_de_coco_y_garbanzos_whsi2b.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840815/veggieBox/img/dishes/310x207/curry_vegano_de_coco_y_garbanzos_d1fa0i.jpg',
 		],
 		categoryId: 5,
 		category: {
@@ -332,6 +342,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/salmon_con_especias_toscanas_y_cuscus_con_ajo_bmdxzb.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669999374/veggieBox/img/dishes/525x350/salmon_con_especias_toscanas_y_cuscus_con_ajo_mdldge.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1669999402/veggieBox/img/dishes/750x500/salmon_con_especias_toscanas_y_cuscus_con_ajo_yxxbmt.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840907/veggieBox/img/dishes/310x207/salmon_con_especias_toscanas_y_cuscus_con_ajo_jiwfg6.jpg',
 		],
 		categoryId: 2,
 		category: {
@@ -364,6 +375,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/bibimbap_coreano_de_carne_gzu3e7.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670005286/veggieBox/img/dishes/525x350/bibimbap_coreano_de_carne_cdbs3r.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670005318/veggieBox/img/dishes/750x500/bibimbap_coreano_de_carne_cwa5mv.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840214/veggieBox/img/dishes/310x207/bibimbap_coreano_de_carne_cjlubm.jpg',
 		],
 		categoryId: 1,
 		category: {
@@ -396,6 +408,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/hoagies_de_champinones_y_mozzarella_m0k7vb.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670005494/veggieBox/img/dishes/525x350/hoagies_de_champinones_y_mozzarella_ozcojg.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670005416/veggieBox/img/dishes/750x500/hoagies_de_champinones_y_mozzarella_clkgxu.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840848/veggieBox/img/dishes/310x207/hoagies_de_champinones_y_mozzarella_vbl2xq.jpg',
 		],
 		categoryId: 4,
 		category: {
@@ -424,7 +437,11 @@ export const items = [
 		description:
 			'Tienes tu pizza de plato hondo de Chicago y tu perrito caliente al estilo de Chicago, pero ¿conoces el icónico sándwich de chuleta de cerdo de Chicago? Shh, es un pequeño secreto de la ciudad natal de este plato, y esta es una novedosa del súper sabroso clásico. En nuestra versión, chuletas deshuesadas sazonadas y chamuscadas y cebolla en rodajas (¡cocinadas en la grasa de la sartén!) rellenan panecillos tostados untados con Dijonnaise. ¡Los gajos de patata crujientes besados ​​con limón sustituyen a las patatas fritas en esta variación de una sensación de Chi-town!',
 		servings: 2,
-		image: ['https://res.cloudinary.com/ferjen/image/upload/v1670007437/veggieBox/img/dishes/525x350/sandwiches_de_chuleta_de_cerdo_con_hierbas_aii8lu.jpg', 'https://res.cloudinary.com/ferjen/image/upload/v1670007416/veggieBox/img/dishes/750x500/sandwiches_de_chuleta_de_cerdo_con_hierbas_rbmyur.jpg'],
+		image: [
+			'https://res.cloudinary.com/ferjen/image/upload/v1670007437/veggieBox/img/dishes/525x350/sandwiches_de_chuleta_de_cerdo_con_hierbas_aii8lu.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670007416/veggieBox/img/dishes/750x500/sandwiches_de_chuleta_de_cerdo_con_hierbas_rbmyur.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840949/veggieBox/img/dishes/310x207/sandwiches_de_chuleta_de_cerdo_con_hierbas_xlcaz8.jpg',
+		],
 		categoryId: 1,
 		category: {
 			id: 1,
@@ -456,6 +473,7 @@ export const items = [
 			'https://res.cloudinary.com/ferjen/image/upload/v1670187571/veggieBox/img/dishes/100x90/cuencos_veganos_picantes_de_coliflor_mex-mex_zpogmx.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670008043/veggieBox/img/dishes/525x350/cuencos_veganos_picantes_de_coliflor_mex-mex_qlusny.jpg',
 			'https://res.cloudinary.com/ferjen/image/upload/v1670008089/veggieBox/img/dishes/750x500/cuencos_veganos_picantes_de_coliflor_mex-mex_w6cwlr.jpg',
+			'https://res.cloudinary.com/ferjen/image/upload/v1670840797/veggieBox/img/dishes/310x207/cuencos_veganos_picantes_de_coliflor_mex-mex_asiwta.jpg',
 		],
 		categoryId: 5,
 		category: {
@@ -807,7 +825,7 @@ export const items = [
 	},
 	{
 		id: 26,
-		itemName: 'Cremoso bistec de Rib-Eye a aa Bearnesa',
+		itemName: 'Cremoso bistec de Rib-Eye a la Bearnesa',
 		stock: 20,
 		price: 400,
 		shortDescription: 'con papas alargadas, judías verdes salteadas y tomates',

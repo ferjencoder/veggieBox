@@ -1,11 +1,8 @@
-import { ListGroup } from 'react-bootstrap';
-import '../assets/scss/style.scss';
+import {ListGroup} from 'react-bootstrap';
 import Item from '../components/Item';
 import SpinnerWidget from './SpinnerWidget';
 
 const ItemList = (datos) => {
-	console.log(datos.datos.length);
-
 	return (
 		<>
 			<ListGroup className='container align-content-center d-flex flex-wrap flex-row'>
@@ -25,7 +22,7 @@ const ItemList = (datos) => {
 							stock={item.stock}
 							cookingTime={item.cookingTime}
 							cookingDifficulty={item.cookingDifficulty}
-							nVCalories={item.nVCalories}
+							nVcalories={item.nVcalories}
 							servings={item.servings}
 						/>
 					))

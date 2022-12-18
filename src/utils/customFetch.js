@@ -1,11 +1,17 @@
-// let is_ok = true;
+let is_ok = true;
 
 export const customFetch = async (time, task) => {
-	return new Promise((resolve, reject) => {
-		setTimeout(() => {
-			let is_ok = true;
-
-			is_ok ? resolve(task) : reject('No taciendo el fetch viteh 😭');
-		}, time);
-	});
+	try {
+		return new Promise((resolve, reject) => {
+			setTimeout(() => {
+				is_ok ? resolve(task) : reject('No taciendo el fetch viteh 😭');
+			}, time);
+			// setTimeout(() => {
+			// 	is_ok ? resolve(task) : reject('No taciendo el fetch viteh 😭');
+			// }, time);
+		});
+	} catch (error) {
+		console.error(`Disculpas! algo salió mal. Por favor, intente de nuevo o contacte al admin.`);
+		console.log(error);
+	}
 };

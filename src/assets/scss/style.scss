@@ -1,17 +1,17 @@
 @font-face {
-  font-family: cotoris;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/Cotoris_tteky6.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/Cotoris_tteky6.woff) format('woff');
+	font-display: swap;
 }
 @font-face {
-  font-family: cotoris bold;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisBold_tpizfe.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris bold;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisBold_tpizfe.woff) format('woff');
+	font-display: swap;
 }
 @font-face {
-  font-family: cotoris bolder;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisHeavy_vbnbrx.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris bolder;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisHeavy_vbnbrx.woff) format('woff');
+	font-display: swap;
 }
 
 /* ABSTRACT */
@@ -22,5 +22,11 @@
 @import './base/typography';
 
 /* COMPONENTS */
+@import './components/cart';
 @import './components/components';
+@import './components/itemDetail';
 @import './components/navbar';
+@import './components/spinner';
+
+/* PAGES */
+@import './pages/landingPage';

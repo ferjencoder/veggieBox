@@ -1,0 +1,67 @@
+//LANDING
+.landing-card__image {
+	width: 150px;
+	height: 150px;
+	justify-content: center;
+}
+.landing__h1 {
+	font-family: $ff-secondary;
+	font-size: 5rem;
+	color: $clr-green-dark;
+}
+
+.landing-card__text {
+	font-size: 2rem;
+	font-family: $ff-primary;
+}
+.landing-swiper__carousel {
+	margin-top: 10rem;
+	margin-bottom: 15rem;
+}
+
+.landing-swiper__container {
+	padding: 0;
+	width: 40rem;
+	height: 30rem;
+	border: 1px solid rgba(239, 239, 239, 0.819);
+	box-shadow: $shdw-dark;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+.landing-swiper__img {
+	width: 100%;
+	height: 18rem;
+	margin: 0 auto;
+	padding: 0;
+	object-fit: cover;
+}
+.landing-swiper__body {
+	height: 13rem;
+	background-color: white;
+	box-shadow: $shdw-light;
+}
+
+.landing-swiper__title {
+	font-size: 2rem;
+	font-family: $ff-logo-heavy;
+}
+.landing-swiper__text {
+	color: rgb(113, 113, 113);
+	letter-spacing: 0.05em;
+	font-weight: 400;
+	font-size: 1.4rem;
+}
+.swiper-button-prev,
+.swiper-button-next {
+	&::after {
+		background-color: white;
+		padding: 0.8rem 1.2rem;
+		box-shadow: $shdw-light;
+	}
+	&::after:hover {
+		background-color: whitesmoke;
+		padding: 0.8rem 1.2rem;
+		box-shadow: $shdw-dark;
+	}
+}

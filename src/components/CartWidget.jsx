@@ -1,20 +1,22 @@
-import {Badge, Button} from 'react-bootstrap';
-import {useContext} from 'react';
-import CartContext from './CartContext';
+import {Badge} from 'react-bootstrap';
+import {handleCartContext} from './CartContext';
 
 const CartWidget = () => {
-  //useContext(CartContext);
-  //TODO Implementar función global para que cuente la cant de items en el carrito
+	const {itemsInCart} = handleCartContext();
+	const itemsInCartCount = itemsInCart();
 
-  return (
-    <div>
-      <Badge className='navbar__badge' bg='danger'>
-        {4}
-        {/* <Badge className="navbar__badge" badgeContent={4} bg="secondary"> */}
-        <span className='visually-hidden'>unread messages</span>
-      </Badge>
-    </div>
-  );
+	return (
+		<div>
+			{itemsInCartCount === 0 ? (
+				<Badge className='bg-transparent'></Badge>
+			) : (
+				<Badge className='navbar__badge' bg='danger'>
+					{itemsInCartCount}
+					<span className='visually-hidden'>{`${itemsInCartCount} productos en el carrito`}</span>
+				</Badge>
+			)}
+		</div>
+	);
 };
 
 export default CartWidget;
