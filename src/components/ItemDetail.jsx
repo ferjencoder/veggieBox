@@ -50,7 +50,7 @@ const ItemDetail = ({item}) => {
 								<h4 className='detail-hero__description'>{item.description}</h4>
 							</Container>
 							{itemCount === 0 ? (
-								<ItemCount stock={item.stock} initial={itemCount} onAdd={onAdd} />
+								<ItemCount stock={item.stock} initial={item.qty} onAdd={onAdd} />
 							) : (
 								<Link to='/cart'>
 									<Container className='d-flex mt-5'>

@@ -8,14 +8,16 @@ const ItemInCartCount = ({stock = 0, initial = 0, item}) => {
 
 	const increment = (itemCountCart) => {
 		if (itemCountCart < stock) {
-			setItemCountCart(itemCountCart);
+			setItemCountCart(itemCountCart + 1);
 			addCountOnItem(item, itemCountCart);
 		}
 	};
 
 	const decrement = (itemCountCart) => {
-		if (itemCountCart > initial) {
-			setItemCountCart(itemCountCart);
+		if (itemCountCart === 0) {
+			return;
+		} else {
+			setItemCountCart(itemCountCart - 1);
 			addCountOnItem(item, itemCountCart);
 		}
 	};
@@ -23,11 +25,11 @@ const ItemInCartCount = ({stock = 0, initial = 0, item}) => {
 	return (
 		<ButtonToolbar>
 			<ButtonGroup className='me-2' aria-label='Aumentar o disminuir la cantidad de items'>
-				<Button variant='success' onClick={() => increment(itemCountCart - 1)}>
+				<Button variant='success' onClick={() => decrement(itemCountCart)}>
 					-
 				</Button>
 				<Button variant='light'>{itemCountCart}</Button>
-				<Button variant='success' onClick={() => decrement(itemCountCart + 1)}>
+				<Button variant='success' onClick={() => increment(itemCountCart)}>
 					+
 				</Button>
 			</ButtonGroup>

@@ -1,17 +1,17 @@
 @font-face {
-  font-family: cotoris;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/Cotoris_tteky6.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/Cotoris_tteky6.woff) format('woff');
+	font-display: swap;
 }
 @font-face {
-  font-family: cotoris bold;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisBold_tpizfe.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris bold;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisBold_tpizfe.woff) format('woff');
+	font-display: swap;
 }
 @font-face {
-  font-family: cotoris bolder;
-  src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisHeavy_vbnbrx.woff) format('woff');
-  font-display: swap;
+	font-family: cotoris bolder;
+	src: url(https://res.cloudinary.com/ferjen/raw/upload/v1670112776/veggieBox/fonts/CotorisHeavy_vbnbrx.woff) format('woff');
+	font-display: swap;
 }
 
 // COLORS
@@ -42,21 +42,23 @@ $btn-border-radius-sm: 0;
 $btn-border-radius-lg: 0;
 
 //BOOT
-$success: #a1d168;
-$primary: #4f8206;
-$danger: #f75f48;
+$success: #a1d168; //light
+$primary: #4f8206; //vegano
+$danger: #f75f48; //keto
+$warning: $clr-yellow; //sin gluten
+$info: $clr-orange-light; //vegetariano
 
 .bg-dk-green {
-  background-color: $clr-green-dark;
+	background-color: $clr-green-dark;
 }
 .btn-primary {
-  box-shadow: none;
-  background-color: #4f8206;
+	box-shadow: none;
+	background-color: #4f8206;
 }
 
 .btn {
-  box-shadow: none;
-  font-size: 2rem;
+	box-shadow: none;
+	font-size: 2rem;
 }
 
 $primary: $clr-green-dark;
@@ -64,5 +66,5 @@ $primary: $clr-green-dark;
 @import '../node_modules/bootstrap/scss/bootstrap';
 
 td {
-  font-size: 1.3rem;
+	font-size: 1.3rem;
 }

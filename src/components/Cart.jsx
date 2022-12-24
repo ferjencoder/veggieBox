@@ -5,7 +5,6 @@ import CartItem from './CartItem';
 
 const Cart = () => {
 	const {cartList, removeAllItemsFromCart, totalItemPrice} = handleCartContext();
-	console.table('CART - cartList', cartList);
 
 	if (cartList.length === 0) {
 		return (
@@ -77,7 +76,7 @@ const Cart = () => {
 							</tr>
 							<tr>
 								<td className='p-3 ps-4 text-uppercase'>Descuentos</td>
-								<td className='text-end pe-5'>0</td>
+								<td className='text-end pe-5'>{priceInARS(0)}</td>
 							</tr>
 							<tr>
 								<td className='p-3 ps-4 text-uppercase'>Total</td>

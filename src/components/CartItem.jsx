@@ -5,23 +5,15 @@ import ItemInCartCount from './ItemInCartCount';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faXmark} from '@fortawesome/free-solid-svg-icons';
 
-// const onAdd = (qty) => {
-// 	setItemCount(qty);
-// 	addItem(item, qty);
-// };
-
 const CartItem = ({item}) => {
 	const {removeItemFromCart} = handleCartContext();
 	const [itemCount, setItemCount] = useState(item.qty);
 	const {addCountOnItem} = useContext(CartContext);
-	// const {onAddFromItem} = handleCartContext();
 
 	const onAddFromItem = (qty) => {
-		setItemCount(qty);
+		setItemCount(itemCount);
 		addCountOnItem(item, qty);
 	};
-
-	// <ItemInCartCount stock={item.stock} initial={itemCount} onAdd={onAdd} />;
 
 	return (
 		<tr key={item.id}>

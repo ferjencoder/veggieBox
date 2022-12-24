@@ -16,6 +16,8 @@ a {
 	text-decoration: none;
 	box-shadow: none;
 	background-color: transparent;
+	margin: 0;
+	padding: 0;
 }
 
 p {
@@ -30,11 +32,13 @@ button {
 	font-family: $ff-primary;
 	align-items: center;
 }
+
 table {
 	th {
 		font-size: 1.6rem;
 		text-transform: uppercase;
 	}
+
 	td {
 		font-size: 1.5rem;
 	}

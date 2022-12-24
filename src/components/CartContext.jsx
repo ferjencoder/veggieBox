@@ -31,9 +31,6 @@ const CartContextProvider = ({children}) => {
 		}
 	};
 	const addCountOnItem = (item, qty) => {
-		console.log('CARTCTX : item => ', item);
-		console.log('CARTCTX : qty => ', qty);
-
 		setCartList(
 			cartList.map((itemWasInCart) => {
 				return itemWasInCart.id === item.id ? {...itemWasInCart, qty: qty} : itemWasInCart;
@@ -41,8 +38,7 @@ const CartContextProvider = ({children}) => {
 		);
 	};
 
-	console.log('CART CONTEXT ', cartList);
-
+	// console.log('CART CONTEXT ', cartList);
 	const itemIsInCart = (id) => (cartList.find((item) => item.id === id) ? true : false);
 	const totalItemPrice = () => cartList.reduce((initialItem, newItem) => initialItem + newItem.qty * newItem.price, 0);
 

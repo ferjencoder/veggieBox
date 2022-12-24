@@ -19,7 +19,7 @@ export const firestoreFetch = async (idCategory) => {
 	return dataFromFirestore;
 };
 
-export const firestoreFetchOne = async (id) => {
+export const firestoreFetchOneItem = async (id) => {
 	const docRef = doc(db, 'items', id);
 	const docSnap = await getDoc(docRef);
 
