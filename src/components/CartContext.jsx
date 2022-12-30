@@ -38,8 +38,8 @@ const CartContextProvider = ({children}) => {
 		);
 	};
 
-	// console.log('CART CONTEXT ', cartList);
 	const itemIsInCart = (id) => (cartList.find((item) => item.id === id) ? true : false);
+
 	const totalItemPrice = () => cartList.reduce((initialItem, newItem) => initialItem + newItem.qty * newItem.price, 0);
 
 	const itemsInCart = () => cartList.reduce((initialCartTotal, newCartTotal) => initialCartTotal + newCartTotal.qty, 0);

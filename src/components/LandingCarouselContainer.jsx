@@ -1,22 +1,19 @@
-import ItemList from './ItemList';
-import {useEffect, useState} from 'react';
+import {useState, useEffect} from 'react';
+import LandingCarouselList from './LandingCarouselList';
+import db from '../utils/firebaseConfig';
+import {collection, getDocs, query} from 'firebase/firestore';
 import {useParams} from 'react-router';
-import {db} from '../utils/firebaseConfig';
-import {collection, getDocs, query, where} from 'firebase/firestore';
+// import {customFetch} from '../utils/customFetch';
+// import {items} from '../utils/items';
 
-import {customFetch} from '../utils/customFetch';
-import {items} from '../utils/items';
-import {async} from '@firebase/util';
-
-//consulta a la api y baja los datos para propearlos al ItemList
-const ItemListContainer = () => {
+const LandingCarouselContainer = () => {
 	const [datos, setDatos] = useState([]);
 	const {idCategory} = useParams();
 
 	/////////////////////////////////////////////////////////////////////////////
-	// EN CASO QUE SE LLENE LA QUOTA EN FIRESTORE
+	//	EN CASO QUE SUPERE LA QUOTA EN FIRESTORE
 	// useEffect(() => {
-	// consulta db hardcodeada
+	// 	// consulta BD
 	// 	if (idCategory) {
 	// 		customFetch(
 	// 			2000,
@@ -36,19 +33,9 @@ const ItemListContainer = () => {
 	useEffect(() => {
 		// ComponentDidUpdate
 		const fetchFromFirestore = async () => {
-			let q;
-
-			if (idCategory) {
-				q = query(collection(db, 'items'), where('categoryId', '==', parseInt(idCategory)));
-			} else {
-				//undefined (devolder todos los productos)
-				q = query(collection(db, 'items'));
-			}
-
+			let q = query(collection(db, 'items'));
 			const querySnapshot = await getDocs(q);
-
 			const dataFromFirestore = querySnapshot.docs.map((item) => ({
-				// transformar el tipo de dato documento que proviene de la db a objetos, los docs parecen objetos pero no son iguales
 				id: item.id,
 				...item.data(),
 			}));
@@ -58,7 +45,7 @@ const ItemListContainer = () => {
 		fetchFromFirestore()
 			.then((result) => setDatos(result))
 			.catch((err) => console.log(err));
-	}, [idCategory]);
+	}, [datos]);
 
 	//componentWillUnmount
 	useEffect(() => {
@@ -66,9 +53,9 @@ const ItemListContainer = () => {
 			setDatos([]);
 		};
 	}, []);
-	/////////////////////////////////////////////////////////////////////////////
 
-	return <ItemList datos={datos} />;
+	/////////////////////////////////////////////////////////////////////////////
+	return <LandingCarouselList datos={datos} />;
 };
 
-export default ItemListContainer;
+export default LandingCarouselContainer;

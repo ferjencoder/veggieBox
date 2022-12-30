@@ -1,10 +1,57 @@
 import {handleCartContext, priceInARS} from './CartContext';
 import {Link} from 'react-router-dom';
+import {addDoc, collection, doc, getFirestore, increment, serverTimestamp, updateDoc} from 'firebase/firestore';
 import {Button, Col, Container, Table, Row} from 'react-bootstrap';
 import CartItem from './CartItem';
+import Alert from './Alert';
+import {useState} from 'react';
+import db from '../utils/firebaseConfig';
 
 const Cart = () => {
 	const {cartList, removeAllItemsFromCart, totalItemPrice} = handleCartContext();
+	const [show, setShow] = useState(false);
+
+	const order = {
+		buyer: {
+			name: 'Mrs. Smith',
+			email: 'jane.smith@email.com',
+			phone: '+54123123',
+			address: 'San Martin 100',
+		},
+		boughtDate: serverTimestamp(),
+
+		items: cartList.map((item) => ({
+			id: item.id,
+			title: item.itemName,
+			price: item.price,
+			qty: item.qty,
+			subtoTotal: item.price * item.qty,
+		})),
+
+		total: totalItemPrice(),
+		totalPlusTaxes: priceInARS(totalItemPrice() + totalItemPrice() * 0.21),
+	};
+
+	const handleClose = () => {
+		setShow(false);
+		createOrder();
+		cartList.forEach(async (item) => {
+			const itemRef = doc(db, 'items', item.id);
+			await updateDoc(itemRef, {
+				stock: increment(-item.qty),
+			});
+		});
+		removeAllItemsFromCart();
+	};
+	const handleShow = () => setShow(true);
+
+	const createOrder = () => {
+		const db = getFirestore();
+		const ordersList = collection(db, 'orders');
+		addDoc(ordersList, order)
+			.then(({id}) => console.log(id))
+			.catch((err) => console.log(err));
+	};
 
 	if (cartList.length === 0) {
 		return (
@@ -20,9 +67,10 @@ const Cart = () => {
 							<tbody>
 								<tr>
 									<td className='border-0'>
-										<h3 className='pt-2 pb-5'>Aun no has agregado items a tu carrito</h3>
-										<Link to={'/'}>
-											<Button className='card--button mt-5'>Seguir comprando</Button>
+										<h4 className='mt-5 pt-2 pb-5'>Aun no has agregado items a tu carrito</h4>
+										<hr />
+										<Link to={'/sanslfiltre'}>
+											<Button className='card--button mt-5 px-5'>Seguir comprando</Button>
 										</Link>
 									</td>
 								</tr>
@@ -84,14 +132,18 @@ const Cart = () => {
 							</tr>
 							<tr>
 								<td colSpan={2} className='border-0'>
-									<Button onClick={() => alert('Gracias por comprar en VeggieBox!! 😍')} className='card--button'>
+									{/* *************************************************************************** */}
+									<Button onClick={handleShow} className='card--button d-flex' style={{width: '100%'}}>
 										Finalizar Compra
 									</Button>
+									{/* *************************************************************************** */}
+
+									<Alert show={show} handleClose={handleClose} />
 								</td>
 							</tr>
 							<tr>
 								<td colSpan={2} className='border-0'>
-									<Button onClick={() => removeAllItemsFromCart()} className='card--button'>
+									<Button onClick={() => removeAllItemsFromCart()} className='card--button d-flex' style={{width: '100%'}}>
 										Eliminar Carrito
 									</Button>
 								</td>

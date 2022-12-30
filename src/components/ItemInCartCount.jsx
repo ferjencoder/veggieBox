@@ -9,16 +9,16 @@ const ItemInCartCount = ({stock = 0, initial = 0, item}) => {
 	const increment = (itemCountCart) => {
 		if (itemCountCart < stock) {
 			setItemCountCart(itemCountCart + 1);
-			addCountOnItem(item, itemCountCart);
+			addCountOnItem(item, itemCountCart + 1);
 		}
 	};
 
 	const decrement = (itemCountCart) => {
-		if (itemCountCart === 0) {
+		if (itemCountCart === 1) {
 			return;
 		} else {
 			setItemCountCart(itemCountCart - 1);
-			addCountOnItem(item, itemCountCart);
+			addCountOnItem(item, itemCountCart - 1);
 		}
 	};
 

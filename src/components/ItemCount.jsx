@@ -1,9 +1,11 @@
 import {Button, ButtonGroup, ButtonToolbar, Container} from 'react-bootstrap';
 import {useEffect, useState} from 'react';
-// import {CartContext} from './CartContext';
 
 const ItemCount = ({stock = 0, initial = 0, onAdd}) => {
-	const [count, setCount] = useState(0);
+	const [count, setCount] = useState(initial);
+
+	console.log('count => ', count);
+	console.log('initial => ', initial);
 
 	useEffect(() => {
 		setCount(initial);
@@ -17,6 +19,7 @@ const ItemCount = ({stock = 0, initial = 0, onAdd}) => {
 
 	const decrement = () => {
 		if (count > initial) {
+			if (count === 0) return;
 			setCount(count - 1);
 		}
 	};

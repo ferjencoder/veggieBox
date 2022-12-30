@@ -1,10 +1,9 @@
 // import { Col, Row } from 'react-bootstrap';
-import {Badge, Button, Container, Form, Nav, Navbar, Dropdown, Offcanvas, ListGroup} from 'react-bootstrap';
+import {Button, Container, Form, Nav, Navbar, Dropdown, Offcanvas, ListGroup} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import CartWidget from './CartWidget';
 import NavBarCartList from './NavBarCartList';
 
-// IMAGES & ICONS
 const vbLogoNavBar = 'https://res.cloudinary.com/ferjen/image/upload/v1670441451/veggieBox/img/navbar/vb-logo-navbar_v3cux6.svg';
 
 const NavBar = () => {

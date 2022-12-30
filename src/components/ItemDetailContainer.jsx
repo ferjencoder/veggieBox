@@ -3,9 +3,25 @@ import {useParams} from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import {firestoreFetchOneItem} from '../utils/dbFetch';
 
+// import {items} from '../utils/items';
+// import {customFetch} from '../utils/customFetch';
+// const {products} = require('../utils/products');
+
 const ItemDetailContainer = () => {
 	const [dato, setDato] = useState({});
 	const {idItem} = useParams();
+
+	/////////////////////////////////////////////////////////////////////////////
+	//	EN CASO QUE SUPERE LA QUOTA EN FIRESTORE
+	// 	useEffect(() => {
+	// 		customFetch(
+	// 			2000,
+	// 			items.find((item) => item.id === parseInt(idItem))
+	// 		)
+	// 			.then((result) => setDato(result))
+	// 			.catch((err) => console.log(err));
+	// 	}, []);
+	/////////////////////////////////////////////////////////////////////////////
 
 	useEffect(() => {
 		firestoreFetchOneItem(idItem)

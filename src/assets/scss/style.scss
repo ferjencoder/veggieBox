@@ -16,12 +16,9 @@
 	font-display: swap;
 }
 
+
 /* ABSTRACT */
 @import './abstract/variables';
-
-/* VENDORS */
-@import './vendors/swiper.scss';
-@import './vendors/pagination.scss';
 
 /* BASE */
 @import './base/reset';
@@ -31,8 +28,13 @@
 @import './components/card';
 @import './components/components';
 @import './components/itemDetail';
+@import './components/modal';
 @import './components/navbar';
 @import './components/spinner';
 
 /* PAGES */
 @import './pages/landingPage';
+
+/* VENDORS */
+// @import './vendors/swiper.scss';
+// @import './vendors/pagination.scss';

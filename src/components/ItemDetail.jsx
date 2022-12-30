@@ -26,14 +26,14 @@ const ItemDetail = ({item}) => {
 							<img className='img-fluid' src={heroImg} alt='Manos cocinando comida sana' />
 							<Container className='detail-hero__card start-50 translate-middle'>
 								<Row>
-									<Col xs={5}>
+									<Col xs={5} className='p-0'>
 										<img className='img-fluid' src={item.image[1]} alt='' />
 									</Col>
 									<Col xs={7}>
 										<div className='mb-5'>
-											<h1 className='detail-hero__heading text-start mt-5 mb-3'>{item.itemName}</h1>
-											<div className='hero-line-divider mb-2'></div>
-											<h3 className='mt-3 text-muted'>{item.shortDescription}</h3>
+											<h1 className='detail-hero__heading text-start mt-5 mb-3 ms-4'>{item.itemName}</h1>
+											<div className='hero-line-divider mb-2 ms-4'></div>
+											<h3 className='mt-3 text-muted ms-4'>{item.shortDescription}</h3>
 										</div>
 										<div className='detail-hero__subtxt mt-5'>
 											<span className='mt-5'>{`🕖 ${item.cookingTime} min   |    ${item.cookingDifficulty}   |   ${item.servings} porciones   |    ${item.nVcalories}`}</span>
@@ -52,9 +52,9 @@ const ItemDetail = ({item}) => {
 							{itemCount === 0 ? (
 								<ItemCount stock={item.stock} initial={item.qty} onAdd={onAdd} />
 							) : (
-								<Link to='/cart'>
-									<Container className='d-flex mt-5'>
-										<Button className='card--button  mx-5'>Ver Carrito</Button>
+								<Link to='/cart' className='m-5 p-5'>
+									<Container className='d-flex'>
+										<Button className='card--button m-5 px-5'>Ver Carrito</Button>
 									</Container>
 								</Link>
 							)}
@@ -108,11 +108,6 @@ const ItemDetail = ({item}) => {
 									</tbody>
 								</Table>
 							</Container>
-						</Col>
-					</Row>
-					<Row>
-						<Col>
-							<p>{item.ingredients[1]}</p>
 						</Col>
 					</Row>
 				</Container>

@@ -1,5 +1,4 @@
-import {Container, Spinner, ProgressBar} from 'react-bootstrap';
-// import Spinner from 'react-bootstrap/Spinner';
+import {Container, Spinner} from 'react-bootstrap';
 
 const SpinnerWidget = () => {
 	return (

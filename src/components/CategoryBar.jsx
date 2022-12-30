@@ -61,9 +61,6 @@ const CategoryBar = () => {
 							<Form.Group className='m-3' controlId='formBasicCheckbox'>
 								<Form.Check type='checkbox' label='FILTRO 3' />
 							</Form.Group>
-							{/* <Dropdown.Item eventKey="1">FILTRO 1</Dropdown.Item>
-              <Dropdown.Item eventKey="2">FILTRO 2</Dropdown.Item>
-              <Dropdown.Item eventKey="3">FILTRO 3</Dropdown.Item> */}
 							<div className='d-grid gap-2'>
 								<Button className='fw-bold' variant='primary' size='lg'>
 									BORRAR FILTROS
